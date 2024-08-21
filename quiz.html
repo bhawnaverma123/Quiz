@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizAlert - Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      .container {
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+          }
+
+        .quiz-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .topic {
+            background-color: rgb(101, 76, 76);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .quiz-card p {
+            margin-bottom: 20px;
+        }
+
+        .quiz-card a {
+            display: inline-block;
+            background-color: rgb(123, 113, 113);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .quiz-card a.disabled {
+            cursor: not-allowed;
+        }
+
+        .quiz-card a:hover {
+            background-color: rgb(106, 95, 95);
+        }
+    </style>
+</head>
+
+<header>
+    <div class="logo">QuizAlert</div>
+    <nav>
+        <a href="quiz.html">Quiz</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+      <h1>Quiz Application</h1>
+      <div class="quiz-card">
+        <div class="topic">
+          <h2>Topic: General Knowledge</h2>
+        </div>
+        <p>
+          This is a quiz related to knowledge which is not related to any specific subject. It is a test of your general knowledge. Which is important for everyone to know.
+        </p>
+        <a href="quiz1.html" id="startBtn">Attempt</a>
+      </div>
+
+      <div class="quiz-card">
+        <div class="topic">
+          <h2>Topic: Geography</h2>
+        </div>
+        <p>
+          This is a quiz related to geography. It is a test of your knowledge about the world and its countries, cities, and landscapes.
+        </p>
+        <a href="#" class="disabled">Coming Soon</a>
+      </div>
+    </div>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="nav-heading">About Us</p>
+        <p>QuizAlert is a platform that provides you with the best quizzes to test your knowledge. We have a wide range of quizzes that you can take to test your knowledge on various topics. You can also create your own quizzes and share them with your friends.</p>
+        <p><a href="aboutus.html">Learn More</a></p>
+      </div>
+      <div class="col-md-4">
+        <p class="nav-heading">Navigation</p>
+        <ul class="list-unstyled links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <p class="nav-heading">Contact Us</p>
+        <p>Phone: +91 998887 76655</p>
+        <p>Email: info@quizalert.com</p>
+        <p>Address: 123, Rajpura, Punjab 12345</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="quiz.js"></script>
+
+</html>

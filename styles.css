@@ -1,0 +1,36 @@
+/* styles.css */
+:root {
+    --bg-color: #242708;
+    --snd-bg-color: #68722e;
+    --text-color: #fff;
+    --main-color: #effc3c;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+
+
+.quiz-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+#timer {
+    font-size: 1.2em;
+}
+
+#submit {
+    margin-top: 20px;
+}
+
+#feedback {
+    font-size: 1.1em;
+}
+
+#result {
+    font-size: 1.2em;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizAlert - About</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #about {
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        #top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        #bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .right {
+            width: 50%;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #about {
+                padding: 20px;
+                width: 100%;
+                max-width: none;
+            }
+
+            #top {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+            }
+
+            #bottom {
+                flex-direction: column;
+            }
+            
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #666;
+        }
+
+        #stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat h2 {
+            font-size: 2em;
+        }
+
+        .stat p {
+            font-size: 1.2em;
+        }
+
+        #homeBtn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        #bannerImg {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="about">
+        <div id="top">
+            <div class="left">
+                <h1>"Quizes are the best pathway to connect and learn!"</h1>
+            </div>
+            <div class="right">
+                <img src="assets/banner2.jpg" alt="Banner Image" id="bannerImg">
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="left">
+                <h1>About Us</h1>
+                <p>QuizAlert is a platform that provides you with the best quizzes to test your knowledge. We have a wide range of quizzes that you can take to test your knowledge on various topics. You can also create your own quizzes and share them with your friends.</p>
+                <p><a href="index.html" id="homeBtn">Home</a></p>
+            </div>
+            <div class="right">
+                <div id="stats">
+                    <div class="stat">
+                        <h2>100</h2>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h2>50</h2>
+                        <p>Products</p>
+                    </div>
+                    <div class="stat">
+                        <h2>2</h2>
+                        <p>Years in Business</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
